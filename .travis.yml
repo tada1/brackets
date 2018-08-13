@@ -25,4 +25,4 @@ script:
   - cd build
   - cmake ..
   - make
-- ./brackets-ut
+  - ./brackets-ut
