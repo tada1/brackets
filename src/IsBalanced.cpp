@@ -3,5 +3,5 @@
 #include <algorithm>
 
 bool IsBalanced::AreBalanced(std::string Str){
-	return true;
+	return false;
 }

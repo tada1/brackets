@@ -21,5 +21,5 @@ TEST_F(IsBalancedTests, testOneParenthes)
 	std::string str = "(";
 // WHEN: on input
 // THEN: expected true result
-	EXPECT_EQ(IsB.AreBalanced(str), true);
+	EXPECT_FALSE(IsB.AreBalanced(str));
 }
