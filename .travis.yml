@@ -19,6 +19,7 @@ os:
 compiler:
   - g++
   - clang
+
 script:
   - mkdir build
   - cd build
