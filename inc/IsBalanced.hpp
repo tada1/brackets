@@ -3,5 +3,7 @@
 
 class IsBalanced
 {
-
+public:
+	IsBalanced(){}
+	bool AreBalanced(std::string);
 };
