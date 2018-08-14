@@ -1,8 +1,15 @@
 #include "../inc/IsBalanced.hpp"
 #include <iostream>
-#include <algorithm>
+#include <string>
 
 bool IsBalanced::AreBalanced(std::string Str){
-	if(Str == "()" || Str == "[]" || Str == "{}")return true;
-	else return false;
+
+	if (Str.size() == 0 or Str.size() % 2 !=0 ) return false;
+	else{
+		if (Str[0] == '(' and Str[1] == ')') return true; 
+		else if (Str[0] == '{' and Str[1] == '}') return true;
+		else if (Str[0] == '[' and Str[1] == ']') return true; 
+		else return false;
+	}
+	
 }
