@@ -13,13 +13,22 @@ TEST_F(IsBalancedTests, assertFasleIsTrue)
 	ASSERT_TRUE(true);
 }
 
-//test single parentheses
-TEST_F(IsBalancedTests, testOneParenthes)
+TEST_F(IsBalancedTests, testOneParenthese)
 {
 // GIVEN:  IsBalanced class and one "("
 	IsBalanced IsB;
 	std::string str = "(";
 // WHEN: on input
-// THEN: expected true result
+// THEN: expected false
 	EXPECT_FALSE(IsB.AreBalanced(str));
+}
+
+TEST_F(IsBalancedTests, testOpenAndClosedParentheses)
+{
+// GIVEN: Is Balanced class and "()"
+	IsBalanced IsB;
+	std::string str = "()";
+// WHEN: check if balanced
+// THEN: expected true
+	EXPECT_TRUE(IsB.AreBalanced(str));
 }
