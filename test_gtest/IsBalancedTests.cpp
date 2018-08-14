@@ -23,32 +23,17 @@ TEST_F(IsBalancedTests, testOneParenthese)
 	EXPECT_FALSE(IsB.AreBalanced(str));
 }
 
-TEST_F(IsBalancedTests, testOpenAndClosedParentheses)
+TEST_F(IsBalancedTests, testOpenAndClosedBrackets)
 {
 // GIVEN: Is Balanced class and "()"
 	IsBalanced IsB;
 	std::string str = "()";
+	std::string str2 = "[]";
+	std::string str3 = "{}";
 // WHEN: check if balanced
 // THEN: expected true
 	EXPECT_TRUE(IsB.AreBalanced(str));
+	EXPECT_TRUE(IsB.AreBalanced(str2));
+	EXPECT_TRUE(IsB.AreBalanced(str3));
 }
 
-TEST_F(IsBalancedTests, testOpenAndClosedBrackets)
-{
-// GIVEN: Is Balanced class and "[]"
-	IsBalanced IsB;
-	std::string str = "[]";
-// WHEN: check if balanced
-// THEN: expected true
-	EXPECT_TRUE(IsB.AreBalanced(str));
-}
-
-TEST_F(IsBalancedTests, testOpenAndClosedBraces)
-{
-// GIVEN: Is Balanced class and "{}"
-	IsBalanced IsB;
-	std::string str = "{}";
-// WHEN: check if balanced
-// THEN: expected true
-	EXPECT_TRUE(IsB.AreBalanced(str));
-}
