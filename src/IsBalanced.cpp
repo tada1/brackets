@@ -3,6 +3,6 @@
 #include <algorithm>
 
 bool IsBalanced::AreBalanced(std::string Str){
-	if(Str =="()")return true;
+	if(Str == "()" || Str == "[]")return true;
 	else return false;
 }
