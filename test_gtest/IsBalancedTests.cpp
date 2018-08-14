@@ -43,3 +43,12 @@ TEST_F(IsBalancedTests, testOpenAndClosedBrackets)
 	EXPECT_TRUE(IsB.AreBalanced(str));
 }
 
+TEST_F(IsBalancedTests, testOpenAndClosedBraces)
+{
+// GIVEN: Is Balanced class and "{}"
+	IsBalanced IsB;
+	std::string str = "{}";
+// WHEN: check if balanced
+// THEN: expected true
+	EXPECT_TRUE(IsB.AreBalanced(str));
+}
