@@ -37,7 +37,7 @@ TEST_F(IsBalancedTests, testOpenAndClosedBrackets)
 	EXPECT_TRUE(IsB.AreBalanced(str2));
 	EXPECT_TRUE(IsB.AreBalanced(str3));
 }
-/*
+
 TEST_F(IsBalancedTests, testNestedBrackets)
 {
 // GIVEN: IsBalanced class and (())
@@ -46,4 +46,4 @@ TEST_F(IsBalancedTests, testNestedBrackets)
 // WHEN: check if balanced
 // THEN: expected true
 	EXPECT_TRUE(IsB.AreBalanced(str));
-}*/
+}
