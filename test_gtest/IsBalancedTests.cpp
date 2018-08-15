@@ -58,4 +58,14 @@ TEST_F(IsBalancedTests, testOddNumberOfBrackets)
 	EXPECT_FALSE(IsB.AreBalanced(str));
 
 }
+TEST_F(IsBalancedTests, testNestesAllKinds)
+{
+// GIVEN: IsBalanced class and [{)(}]
+	IsBalanced IsB;
+	std::string str = "[{)(}]";
+// WHEN: check if balanced
+// THEN: expected false
+	EXPECT_FALSE(IsB.AreBalanced(str));
+
+}
 
