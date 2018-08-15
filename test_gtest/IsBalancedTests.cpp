@@ -56,8 +56,8 @@ TEST_F(IsBalancedTests, testOddNumberOfBrackets)
 // WHEN: check if balanced
 // THEN: expected false
 	EXPECT_FALSE(IsB.AreBalanced(str));
-
 }
+
 TEST_F(IsBalancedTests, testNestesAllKinds)
 {
 // GIVEN: IsBalanced class and [{)(}]
@@ -66,6 +66,14 @@ TEST_F(IsBalancedTests, testNestesAllKinds)
 // WHEN: check if balanced
 // THEN: expected false
 	EXPECT_FALSE(IsB.AreBalanced(str));
-
 }
 
+TEST_F(IsBalancedTests, testNestesAllKindsComplicated)
+{
+// GIVEN: IsBalanced class and {()}[[{}({})[]]]
+	IsBalanced IsB;
+	std::string str = "{()}[[{}({})[]]]";
+// WHEN: check if balanced
+// THEN: expected true
+	EXPECT_TRUE(IsB.AreBalanced(str));
+}
