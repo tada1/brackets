@@ -15,7 +15,7 @@ bool IsBalanced::AreBalanced(std::string Str){
 	if (tmp.size() == 0) return true;
 	else return false;
 	}
-}
+} "ggggg"
 
 bool IsBalanced::IsPair(char t, char s){
 	if ((t == '(') and (s == ')')) return true;
